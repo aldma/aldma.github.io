@@ -1,0 +1,12 @@
+body{
+  margin:0;
+  font-family: Arial, "Helvetiva Neue",
+  Helvetica, sans-serif;
+  font-size:17px;
+  color:#926239;
+  line-height:1.6;
+}
+
+#showcase{
+  height:100px;
+}
