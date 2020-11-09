@@ -12,7 +12,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	padding-bottom: 8px;
 	margin: 0;
-    font-size: 11pt;
 }
 
 .sidebyside {
@@ -31,7 +30,7 @@ body {
 }
 
 #layout-menu {
-	background: #f6f6f6;
+    	background: #f6f6f6;
 	border: 1px solid #dddddd;
 	padding-top: 0.5em;
 	padding-left: 8px;
@@ -39,13 +38,13 @@ body {
 	font-size: 1.0em;
 	width: auto;
 	white-space: nowrap;
-    text-align: left;
-    vertical-align: top;
+    	text-align: left;
+    	vertical-align: top;
 }
 
 #layout-menu td {
 	background: #f4f4f4;
-    vertical-align: top;
+    	vertical-align: top;
 }
 
 #layout-content {
@@ -75,7 +74,7 @@ pre, tt {
 }
 
 a, a > tt, .tooltip {
-	color: #0f4c81; /* #027ca0 */
+	color: #0f4c81;
 	text-decoration: none;
 }
 
@@ -85,11 +84,11 @@ a:hover, .tooltip:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #0f4c81; /* #022b6d */
+	color: #0f4c81;
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #0f4c81; /* #527bbd, #0050B5 */
+	color: #0f4c81;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -137,7 +136,7 @@ strong {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'PT Serif', serif;
-    color: #0f4c81; /* #16879c */
+    color: #0f4c81;
     font-weight: normal;
 }
 
@@ -165,7 +164,7 @@ h2 + h3 {
 
 h3 {
 	font-size: 110%;
-    color: #0f4c81; /* #454545 */
+    color: #0f4c81;
 	border-bottom: none;
 }
 
@@ -186,11 +185,11 @@ div#footer {
 	border-top: 1px solid #c0c0c0;
 	padding-top: 0.1em;
 	margin-top: 4.0em;
-	color: #c0c0c0; /* #c0c0c0 */
+	color: #c0c0c0;
 }
 
 div#footer a {
-	color: #80a0b0; /* #80a0b0 */
+	color: #80a0b0;
 }
 
 div#footer-text {
@@ -214,7 +213,7 @@ dl {
 }
 
 dd {
-	color: #222222; /* #222222 */
+	color: #222222;
 }
 
 dd > *:first-child {
@@ -264,7 +263,7 @@ div.codeblock, div.infoblock {
 
 div.blocktitle {
 	font-weight: bold;
-	color: #cd7b62; /* #022b6d */
+	color: #cd7b62;
 	margin-top: 1.2em;
 	margin-bottom: 0.1em;
 }
@@ -275,7 +274,7 @@ div.blockcontent {
 }
 
 div.infoblock > div.blockcontent {
-	background: #ffffee; /* #022b6d */
+	background: #ffffee;
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
@@ -295,7 +294,7 @@ div.infoblock p + p {
 }
 
 div.codeblock > div.blockcontent {
-	background: #f6f6f6; /* #f6f6f6 */
+	background: #f6f6f6;
 }
 
 span.pycommand {
@@ -315,10 +314,10 @@ span.operator {
 	color: #880000;
 }
 span.error {
-	color: #aa0000; /* #aa0000 */
+	color: #aa0000;
 }
 span.comment, span.comment > *, span.string, span.string > * {
-	color: #606060; /* #606060 */
+	color: #606060;
 }
 
 @media print {
