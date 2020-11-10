@@ -1,4 +1,4 @@
-@import("https://fonts.googleapis.com/css?family=PT+Serif");
+@import("https://fonts.googleapis.com/css?family=Roboto+Slab");
 @import("https://fonts.googleapis.com/css?family=Roboto");
 
 table#tlayout {
@@ -134,7 +134,7 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'PT Serif', serif;
+    font-family: 'Roboto Slab', serif;
     color: #0f4c81;
     font-weight: normal;
 }
