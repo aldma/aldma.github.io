@@ -1,5 +1,5 @@
-@import("https://fonts.googleapis.com/css?family=Roboto+Slab");
-@import("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 table#tlayout {
     border: none;
@@ -134,9 +134,9 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', serif;
-    color: #0f4c81;
-    font-weight: normal;
+	font-family: 'Roboto Slab', serif;
+    	color: #0f4c81;
+    	font-weight: normal;
 }
 
 h1, h2, h3 {
@@ -150,6 +150,7 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 165%;
+    	font-weight: 600;
 }
 
 h2 {
