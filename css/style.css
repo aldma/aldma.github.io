@@ -79,13 +79,13 @@ a, a > tt, .tooltip {
 }
 
 a:hover, .tooltip:hover {
-	border-bottom: 1px gray dotted;
+	border-bottom: 1px dotted #c0c0c0;
 	cursor: pointer;
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #0f4c81;
-	border-bottom: 1px gray solid;
+	border-bottom: 1px solid #c0c0c0;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
 	color: #0f4c81;
@@ -96,7 +96,7 @@ a:hover, .tooltip:hover {
 }
 
 div.menu-category {
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #c0c0c0;
 	margin-top: 0.8em;
 	padding-top: 0.2em;
 	padding-bottom: 0.1em;
@@ -111,7 +111,7 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 1px dashed gray;
+	border-bottom: 1px solid #c0c0c0;
 }
 
 div#toptitle + h2, div#toptitle + h3 {
@@ -145,12 +145,12 @@ h1, h2, h3 {
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px dashed #aaaaaa;
+	border-bottom: 1px solid #c0c0c0;
 }
 
 h1 {
 	font-size: 165%;
-    	font-weight: 600;
+    	font-weight: 500;
 }
 
 h2 {
@@ -164,7 +164,7 @@ h2 + h3 {
 
 h3 {
 	font-size: 110%;
-    color: #0f4c81;
+    	color: #0f4c81;
 	border-bottom: none;
 }
 
@@ -269,7 +269,7 @@ div.blocktitle {
 }
 
 div.blockcontent {
-	border: 1px solid silver;
+	border: 1px solid #c0c0c0;
 	padding: 0.3em 0.5em;
 }
 
@@ -360,7 +360,7 @@ img.eqwl {
 }
 
 table {
-    border: 2px solid black;
+    border: 2px solid #000000;
     border-collapse: collapse;
 }
 
@@ -369,7 +369,7 @@ td {
     padding-left: 0.5em;
     padding-right: 0.5em;
     text-align: center;
-    border: 1px solid gray;
+    border: 1px solid #c0c0c0;
 }
 
 table + table {
@@ -378,7 +378,7 @@ table + table {
 
 tr.heading {
     font-weight: bold;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #000000;
 }
 
 img {
@@ -403,8 +403,8 @@ table.imgtable, table.imgtable td {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 140px;
-  background-color: #555;
-  color: #fff;  /* #fff */
+  background-color: #555555;
+  color: #ffffff;
   text-align: center;
   border-radius: 6px;
   padding: 5px;
@@ -425,7 +425,7 @@ table.imgtable, table.imgtable td {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent; /* #555 */
+  border-color: #555555 transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
