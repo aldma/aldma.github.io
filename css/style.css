@@ -51,12 +51,12 @@ body {
 	padding-top: 0.0em;
 	padding-left: 1.0em;
 	padding-right: 1.0em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
-    max-width: 730px;
-    margin: 0 auto;
+    	border: none;
+    	background: white;
+    	text-align: left;
+    	vertical-align: top;
+    	max-width: 730px;
+    	margin: 0 auto;
 }
 
 #layout-menu a {
@@ -64,23 +64,14 @@ body {
 	margin-left: 0.5em;
 }
 
-tt {
-    background: #ffffdd;
-}
-
-pre, tt {
-	font-size: 90%;
-	font-family: monaco, monospace;
-}
-
-a, a > tt, .tooltip {
+a, .tooltip {
 	color: #0f4c81;
 	text-decoration: none;
 }
 
 a:hover, .tooltip:hover {
 	/*border-bottom: 1px dotted #c0c0c0;*/
-	color: #6f93b3;
+	color: #d3d3d3;
 	cursor: pointer;
 }
 
@@ -95,7 +86,7 @@ a:hover, .tooltip:hover {
 }
 
 #layout-menu a:hover {
-	color: #6f93b3;
+	color: #d3d3d3;
 	text-decoration: none;
 }
 
@@ -193,7 +184,7 @@ div#footer {
 }
 
 div#footer a {
-	color: #80a0b0;
+	color: #d3d3d3;
 }
 
 div#footer-text {
