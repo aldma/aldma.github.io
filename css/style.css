@@ -79,7 +79,8 @@ a, a > tt, .tooltip {
 }
 
 a:hover, .tooltip:hover {
-	border-bottom: 1px dotted #c0c0c0;
+	/*border-bottom: 1px dotted #c0c0c0;*/
+	color: #6f93b3;
 	cursor: pointer;
 }
 
@@ -87,11 +88,14 @@ a:hover, .tooltip:hover {
 	color: #0f4c81;
 	border-bottom: 1px solid #c0c0c0;
 }
-#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+
+#layout-menu a:link, #layout-menu a:visited {
 	color: #0f4c81;
 	text-decoration: none;
 }
+
 #layout-menu a:hover {
+	color: #6f93b3;
 	text-decoration: none;
 }
 
