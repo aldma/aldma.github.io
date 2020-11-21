@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-table#tlayout {
-    border: none;
-    border-collapse: separate;
-    background: white;
-}
-
 body {
 	background: white;
+	color: #444444; /* charcoal */
 	font-family: 'Roboto', sans-serif;
+	font-size: 12pt;
 	padding-bottom: 8px;
 	margin: 0;
 }
@@ -21,30 +17,8 @@ body {
   padding-right: 1rem;
 }
 
-.date {
-    color: #000000;
-}
-
 .highlight {
     font-weight: 600;
-}
-
-#layout-menu {
-    	background: #f6f6f6;
-	border: 1px solid #dddddd;
-	padding-top: 0.5em;
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 1.0em;
-	width: auto;
-	white-space: nowrap;
-    	text-align: left;
-    	vertical-align: top;
-}
-
-#layout-menu td {
-	background: #f4f4f4;
-    	vertical-align: top;
 }
 
 #layout-content {
@@ -55,69 +29,28 @@ body {
     	background: white;
     	text-align: left;
     	vertical-align: top;
-    	max-width: 730px;
+    	max-width: 670px;
     	margin: 0 auto;
 }
 
-#layout-menu a {
-	line-height: 1.5em;
-	margin-left: 0.5em;
-}
-
-a, .tooltip {
-	color: #0f4c81;
+a {
+	color: #0f4c81; /* classic blue */
 	text-decoration: none;
 }
 
-a:hover, .tooltip:hover {
-	/*border-bottom: 1px dotted #c0c0c0;*/
-	color: #d3d3d3;
+a:hover {
+	color: #c0c0c0; /* silver */
 	cursor: pointer;
-}
-
-#layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #0f4c81;
-	border-bottom: 1px solid #c0c0c0;
-}
-
-#layout-menu a:link, #layout-menu a:visited {
-	color: #0f4c81;
-	text-decoration: none;
-}
-
-#layout-menu a:hover {
-	color: #d3d3d3;
-	text-decoration: none;
-}
-
-div.menu-category {
-	border-bottom: 1px solid #c0c0c0;
-	margin-top: 0.8em;
-	padding-top: 0.2em;
-	padding-bottom: 0.1em;
-	font-weight: bold;
-}
-
-div.menu-item {
-	padding-left: 16px;
-	text-indent: -16px;
 }
 
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0; /* silver */
 }
 
 div#toptitle + h2, div#toptitle + h3 {
 	margin-top: -0.7em;
-}
-
-div#subtitle {
-	margin-top: 0.0em;
-	margin-bottom: 0.0em;
-	padding-top: 0em;
-	padding-bottom: 0.1em;
 }
 
 em {
@@ -130,7 +63,7 @@ strong {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto Slab', serif;
-    	color: #0f4c81;
+    	color: #0f4c81; /* classic blue */
     	font-weight: normal;
 }
 
@@ -140,26 +73,25 @@ h1, h2, h3 {
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0; /* silver */
 }
 
 h1 {
-	font-size: 165%;
-    	font-weight: 500;
+	font-size: 160%;
+  font-weight: 500;
 }
 
 h2 {
 	padding-top: 0.8em;
-	font-size: 125%;
+	font-size: 130%;
 }
 
 h2 + h3 {
-    padding-top: 0.2em;
+  padding-top: 0.2em;
 }
 
 h3 {
 	font-size: 110%;
-    	color: #0f4c81;
 	border-bottom: none;
 }
 
@@ -170,26 +102,15 @@ p {
 	line-height: 1.3;
 }
 
-pre {
-	padding: 0;
-	margin: 0;
-}
-
 div#footer {
-	font-size: small;
-	border-top: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0; /* silver */
 	padding-top: 0.1em;
 	margin-top: 4.0em;
-	color: #c0c0c0;
 }
 
 div#footer a {
-	color: #d3d3d3;
-}
-
-div#footer-text {
-	float: left;
-	padding-bottom: 8px;
+	font-size: 80%;
+	color: #c0c0c0; /* silver */
 }
 
 ul, ol, dl {
@@ -205,10 +126,6 @@ dt {
 
 dl {
 	margin-left: 20px;
-}
-
-dd {
-	color: #222222;
 }
 
 dd > *:first-child {
@@ -246,88 +163,6 @@ ol ol ol {
 	list-style-type: lower-roman;
 }
 
-p + div.codeblock {
-	margin-top: -0.6em;
-}
-
-div.codeblock, div.infoblock {
-	margin-right: 0%;
-	margin-top: 1.2em;
-	margin-bottom: 1.3em;
-}
-
-div.blocktitle {
-	font-weight: bold;
-	color: #cd7b62;
-	margin-top: 1.2em;
-	margin-bottom: 0.1em;
-}
-
-div.blockcontent {
-	border: 1px solid #c0c0c0;
-	padding: 0.3em 0.5em;
-}
-
-div.infoblock > div.blockcontent {
-	background: #ffffee;
-}
-
-div.blockcontent p + ul, div.blockcontent p + ol {
-	margin-top: 0.4em;
-}
-
-div.infoblock p {
-	margin-bottom: 0em;
-}
-
-div.infoblock li p, div.infoblock dd p {
-	margin-bottom: 0.5em;
-}
-
-div.infoblock p + p {
-	margin-top: 0.8em;
-}
-
-div.codeblock > div.blockcontent {
-	background: #f6f6f6;
-}
-
-span.pycommand {
-	color: #000070;
-}
-
-span.statement {
-	color: #008800;
-}
-span.builtin {
-	color: #000088;
-}
-span.special {
-	color: #990000;
-}
-span.operator {
-	color: #880000;
-}
-span.error {
-	color: #aa0000;
-}
-span.comment, span.comment > *, span.string, span.string > * {
-	color: #606060;
-}
-
-@media print {
-	#layout-menu { display: none; }
-}
-
-#fwtitle {
-	margin: 2px;
-}
-
-#fwtitle #toptitle {
-	padding-left: 0.5em;
-	margin-bottom: 0.5em;
-}
-
 #layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
 	margin-top: -0.7em;
 }
@@ -340,90 +175,33 @@ div#toptitle h1, #layout-content div#toptitle h1 {
 	border-bottom: none;
 }
 
-img.eq {
-	padding: 0;
-	padding-left: 0.1em;
-	padding-right: 0.1em;
-	margin: 0;
+#bib-authors {
+	font-style: normal;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-size: 115%;
 }
 
-img.eqwl {
-	padding-left: 2em;
-	padding-top: 0.6em;
-	padding-bottom: 0.2em;
-	margin: 0;
+#bib-info {
+  /**/
 }
 
-table {
-    border: 2px solid #000000;
-    border-collapse: collapse;
+dd#bib-notes {
+	font-size: 93%;
 }
 
-td {
-    padding: 2px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    text-align: center;
-    border: 1px solid #c0c0c0;
+dt#bib-title {
+	font-size: 100%;
+	margin-top: 0.5ex;
+	margin-bottom: 0.5ex;
 }
 
-table + table {
-    margin-top: 1em;
-}
-
-tr.heading {
-    font-weight: bold;
-    border-bottom: 2px solid #000000;
-}
-
-img {
-    border: none;
-    max-width: 100%;
-}
-
-table.imgtable, table.imgtable td {
-    border: none;
-    text-align: left;
-}
-
-.bibtex_hidden {
-	display:none;
-}
-
-.tooltip {
-  position: relative;
-  display: inline;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555555;
-  color: #ffffff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: .8;
+div.bib-abstract {
+    font-weight: lighter;
+    display: none;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+    padding: 0 8pt;
+    margin-left: 2pt;
+    border-left: 1pt solid #c0c0c0; /* silver */
 }

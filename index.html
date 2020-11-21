@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="img/site.webmanifest">
+		<meta name="theme-color" content="#ffffff">
     <title>Alberto De Marchi</title>
   </head>
 
   <body>
+
+		<script>
+			function showHideFun(id) {
+			  var x = document.getElementById(id);
+			  if (x.style.display != "block") {
+			    x.style.display = "block";
+			  } else {
+			    x.style.display = "none";
+			  }
+			}
+			$(document).ready(function()
+			{
+   			$(".nopropagate").click(function (event)
+   			{
+       		event.stopPropagation();
+   			});
+			});
+		</script>
 
 <div id="layout-content">
 
@@ -24,14 +47,14 @@
 </p>
 <p>
 	<a href="mailto:alberto.demarchi@unibw.de">E-Mail</a> /
-  	<a href="https://orcid.org/0000-0002-3545-6898">ORCiD</a> /
+  <a href="https://orcid.org/0000-0002-3545-6898">ORCiD</a> /
 	<a href="https://scholar.google.com/citations?hl=en&user=_fYtFysAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> <!--//
 	<a href="https://www.github.com/aldma">GitHub</a> /
-  	<a href="https://www.linkedin.com/in/alberto-de-marchi">LinkedIn</a><br /> 
+  	<a href="https://www.linkedin.com/in/alberto-de-marchi">LinkedIn</a><br />
   	<a href="https://aldma.github.io/assets/resume.pdf">Resume</a>-->
 </p>
 </div>
-		
+
 <h2>About me</h2>
 
 <p>
@@ -41,17 +64,18 @@
 	Engineering from <a href="https://www.dii.unitn.it/">UniTn</a>, Trento. I grew up in the Veneto countryside, Italy.
 </p>
 <p>
-	&#x1F52D I am interested in computational optimization and the interplay between numerical methods, linear algebra, and algorithms. My research
-	activity comprises the design, theoretical analysis, and practical implementation of methods for continuous optimization. Currently, I am working on
-	stabilized, primal-dual Newton-type methods for (convex quadratic and) nonlinear programming problems.
+	&#x1F52D; I am interested in computational optimization and fashinated by the interplay between numerical optimization and linear algebra. My research
+	comprises the design, analysis, implementation, and testing of methods for continuous optimization. Currently, I am working on
+	stabilized, primal-dual Newton-type methods for nonlinear programming problems.
 </p>
 <p>
-	&#x1F331 I enjoy reading about the problem of consciousness and I am curious about how people came to be curious. Asimov's <em>Foundation</em>,
-	<em>War and Peace</em>, and <em>The Bridge on the Drina</em> are among my favourite books. I am learning German and Julia, and I am looking 
+	&#x1F331; I enjoy reading about the problem of consciousness and I am curious about how people came to be curious. Asimov's <em>Foundation</em>,
+	<em>War and Peace</em>, and <em>The Bridge on the Drina</em> are among my favourite books. I am learning German and Julia, and I am looking
 	forward to diving into Portuguese and Rust. When out of office, you can find me most often cooking or hiking.
 </p>
 <p>
-	&#x1F4EB The best way to reach me is by <a href="mailto:alberto.demarchi@unibw.de">e-mail</a>.
+	&#x1F4EB; The best way to reach me is by <a href="mailto:alberto.demarchi@unibw.de">e-mail</a>. If you are interested in my work or would like to chat
+	about optimization and its applications, don't hesitate to contact me.
 </p>
 
 <h2>Publications</h2>
@@ -59,145 +83,268 @@
 <h3>2020</h3>
 
 <dl>
-	<dt>
-    		Constrained and Sparse Switching Times Optimization via Augmented Lagrangian Proximal Methods
-    	</dt>
-    	<dd>
-    		A. De Marchi.
-    	</dd>
-    	<dd>
-    		Presented at ACC 2020, Denver.
-    	</dd>
-    	<dd>
-	    	[<a href="https://doi.org/10.23919/ACC45564.2020.9147892">doi</a>] [<a href="bib/20_acc.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/20_acc.bib" target="_blank" rel="noopener noreferrer">bibtex</a>]
-    	</dd>
+	<dt id="bib-title">
+		Constrained and Sparse Switching Times Optimization via Augmented Lagrangian Proximal Methods
+	</dt>
+	<dd id="bib-notes">
+		<span id="bib-authors">De Marchi.</span>
+		<span id="bib-info">2020 American Control Conference (ACC), Denver.</span><br>
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_20_acc_abstract')">abstract</a>]
+			[<a href="bib/20_acc.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.23919/ACC45564.2020.9147892">doi</a>]
+		</span>
+		<div class="bib-abstract" id="bib_20_acc_abstract">
+			In this paper we reformulate a switching times optimization problem with non-uniform
+			switching costs and dwell-time constraints via direct multiple shooting, sparsity-inducing
+			regularization and semi-continuous variables. The transformed problem has composite
+			smooth/nonsmooth objective function and smooth constraints. Necessary optimality conditions for
+			such problems are derived, resembling results from smooth optimization. A
+			safeguarded, primal-dual, augmented Lagrangian proximal method is proposed for its
+			numerical solution, and the global convergence toward points satisfying the necessary conditions is
+			detailed. Finally, numerical results demonstrate the efficacy and limitations of the method.
+		</div>
+	</dd>
 </dl>
 
 <dl>
-	<dt>
-    		Sparse Switching Times Optimization and a Sweeping Hessian Proximal Method
-    	</dt>
-    	<dd>
-    		A. De Marchi, M. Gerdts.
-    	</dd>
-    	<dd>
-    		Presented at Operations Research 2019, Dresden.
-    	</dd>
-    	<dd>
-		[<a href="https://doi.org/10.1007/978-3-030-48439-2_11">doi</a>] [<a href="bib/19_or.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/19_or.bib" target="_blank" rel="noopener noreferrer">bibtex</a>]
-    	</dd>
+	<dt id="bib-title">
+		Sparse Switching Times Optimization and a Sweeping Hessian Proximal Method
+	</dt>
+  <dd id="bib-notes">
+		<span id="bib-authors">De Marchi, Gerdts.</span>
+		<span id="bib-info">In <em>Operations Research Proceedings 2019</em>, <span id="bib-authors">Neufeld, Buscher, Lasch, M&#246;st, Sch&#246;nberger</span> (eds). OR 2019, Dresden.</span><br>
+		<!--  Presented at Operations Research 2019, Dresden. -->
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_19_or_abstract')">abstract</a>]
+			[<a href="bib/19_or.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.1007/978-3-030-48439-2_11">doi</a>]
+		</span>
+		<div class="bib-abstract" id="bib_19_or_abstract">
+			The switching times optimization problem for switched dynamical systems, with fixed
+			initial state, is considered. A nonnegative cost term for changing dynamics is introduced to
+			induce a sparse switching structure, that is, to reduce the number of switches. To deal with
+			such problems, an inexact Newton-type arc search proximal method, based on a parametric
+			local quadratic model of the cost function, is proposed. Numerical investigations and
+			comparisons on a small-scale benchmark problem are presented and discussed.
+		</div>
+  </dd>
 </dl>
 
 <h3>2019</h3>
 
 <dl>
-    	<dt>
-    		On the Mixed-Integer Linear-Quadratic Optimal Control With Switching Cost
-    	</dt>
-    	<dd>
-    		A. De Marchi. <em>IEEE Control Systems Letters</em>.
-	</dd>
-	<dd>
-		Presented at IEEE CDC 2019, Nice.
-    	</dd>
-    	<dd>
-		[<a href="https://doi.org/10.1109/LCSYS.2019.2920425">doi</a>] [<a href="bib/19_lcss_milqrswc.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/19_lcss_milqrswc.bib" target="_blank" rel="noopener noreferrer">bibtex</a>] [<a href="https://doi.org/10.5281/zenodo.3334538">suppl</a>]
-    	</dd>
+	<dt id="bib-title">
+  	On the Mixed-Integer Linear-Quadratic Optimal Control With Switching Cost
+  </dt>
+  <dd id="bib-notes">
+		<span id="bib-authors">De Marchi.</span>
+		<span id="bib-info"><em>IEEE Control Systems Letters</em>, vol. 3.</span><br>
+		<!-- Presented at 58th IEEE Conference on Decision and Control (CDC) 2019, Nice. -->
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_19_lcss_milqrswc_abstract')">abstract</a>]
+			[<a href="bib/19_lcss_milqrswc.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.1109/LCSYS.2019.2920425">doi</a>]
+			[<a href="https://doi.org/10.5281/zenodo.3334538">suppl</a>]
+		</span>
+		<div class="bib-abstract" id="bib_19_lcss_milqrswc_abstract">
+			This paper concerns the optimal control of a continuous-time dynamical system via
+			continuous and discrete-valued control variables, where the objective functional also
+			accounts for state-independent switching costs. The class of mixed-integer optimal
+			control problems is interpreted as a bilevel problem, involving both switching times
+			optimization, for a given sequence of modes, and purely continuous optimal control.
+			Additionally, an original nonconvex formulation for the switching costs is introduced,
+			in terms of cardinality, inspired by sparse optimization and compressed sensing techniques.
+			We then adopt proximal algorithms to solve the resulting bilevel optimal
+			control problem with composite objective function. An efficient routine for evaluating the
+			proximal operator is developed. Two examples are numerically solved via a
+			proximal gradient method, discussed and compared with the literature. Although this
+			work focuses on switched linear time-varying dynamics and quadratic cost functionals
+			with a specific formulation of the switching costs, the proposed approach may also
+			apply to more general mixed-integer optimal control problems.
+		</div>
+  </dd>
 </dl>
 
 <dl>
-	<dt>
-    		Nonsmooth Newton's Method: Some Structure Exploitation
-    	</dt>
-    	<dd>
-    		A. De Marchi, M. Gerdts.
-	</dd>
-    	<dd>
-    		Presented at ICCS 2019, Faro.
-    	</dd>
-    	<dd>
-		[<a href="https://doi.org/10.1007/978-3-030-22744-9_32">doi</a>] [<a href="bib/19_ssnsex_iccs.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/19_ssnsex_iccs.bib" target="_blank" rel="noopener noreferrer">bibtex</a>] [<a href="https://doi.org/10.5281/zenodo.1486064">code</a>]
-    	</dd>
+	<dt id="bib-title">
+    Nonsmooth Newton's Method: Some Structure Exploitation
+  </dt>
+  <dd id="bib-notes">
+  	<span id="bib-authors">De Marchi, Gerdts.</span>
+		<span id="bib-info">In <em>Computational Science - ICCS 2019</em>, <span id="bib-authors">Rodrigues et al.</span> (eds). ICCS 2019, Faro.</span><br>
+		<!-- Lecture Notes in Computer Science, vol. 11538. -->
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_19_ssnsex_iccs_abstract')">abstract</a>]
+			[<a href="bib/19_ssnsex_iccs.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.1007/978-3-030-22744-9_32">doi</a>]
+			[<a href="https://doi.org/10.5281/zenodo.1486064">code</a>]
+		</span>
+		<div class="bib-abstract" id="bib_19_ssnsex_iccs_abstract">
+			We investigate real asymmetric linear systems arising in the search direction generation in a nonsmooth Newton’s method. This applies to constrained optimisation
+			problems via reformulation of the necessary conditions into an equivalent nonlinear
+			and nonsmooth system of equations. We propose a strategy to exploit the problem
+			structure. First, based on the sub-blocks of the original matrix, some variables are
+			selected and ruled out for a posteriori recovering; then, a smaller and symmetric linear
+			system is generated; eventually, from the solution of the latter, the remaining variables are obtained. We prove the method is applicable if the original linear system
+			is well-posed. We propose and discuss different selection strategies. Finally, numerical examples are presented to compare this method with the direct approach without
+			exploitation, for full and sparse matrices, in a wide range of problem size.
+		</div>
+  </dd>
 </dl>
 
 <dl>
-    	<dt>
-    		An Iterative Method for Final Time Optimization in Nonlinear Optimal Control
-    	</dt>
-    	<dd>
-    		A. De Marchi, M. Gerdts.
+	<dt id="bib-title">
+		An Iterative Method for Final Time Optimization in Nonlinear Optimal Control
+	</dt>
+	<dd id="bib-notes">
+		<span id="bib-authors">De Marchi, Gerdts.</span>
+		<span id="bib-info">2019 SIAM Conference on Control and its Applications (CT), Chengdu.</span><br>
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_19_free_time_ocp_ct_abstract')">abstract</a>]
+			[<a href="bib/19_free_time_ocp_ct.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.1137/1.9781611975758.10">doi</a>]
+		</span>
+		<div class="bib-abstract" id="bib_19_free_time_ocp_ct_abstract">
+			This paper discusses a bilevel optimization approach for free finite final time optimal
+			control problems and addresses a numerical method for their approximate solution. The core
+			idea is to decouple the final time optimization from the optimal control
+			and state trajectory. This is rigorously formulated as an equivalent bilevel problem
+			seeking, at the upper level, the optimal final time and optimal control and corresponding
+			state at the lower level. Standard solvers for nonlinear optimal control can deal
+			with the latter, while the former is a box-constrained optimization problem with one
+			scalar decision variable. The interface between the two levels is based on the Hamilton
+			function associated to the problem and its relationship with the cost function.
+			A method for solving the upper level problem is developed, that combines a tailored
+			fast first-order method with a robust and guaranteed root-finding algorithm. Finally,
+			numerical results demonstrate the robustness of the method and show its limitations.
+		</div>
 	</dd>
-	<dd>
-		Presented at SIAM CT 2019, Chengdu.
-    	</dd>
-	<dd>
-		[<a href="https://doi.org/10.1137/1.9781611975758.10">doi</a>] [<a href="bib/19_free_time_ocp_ct.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/19_free_time_ocp_ct.bib" target="_blank" rel="noopener noreferrer">bibtex</a>]
-    	</dd>
 </dl>
 
 <dl>
-    	<dt>
-    		Free finite horizon LQR: a bilevel perspective and its application to model predictive control
-    	</dt>
-    	<dd>
-    		A. De Marchi, M. Gerdts. <em>Automatica</em>.
-	</dd>
-    	<dd>
-    		[<a href="https://doi.org/10.1016/j.automatica.2018.11.032">doi</a>] [<a href="bib/19_free_time_lqr.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/19_free_time_lqr.bib" target="_blank" rel="noopener noreferrer">bibtex</a>]
-	</dd>
+	<dt id="bib-title">
+		Free finite horizon LQR: a bilevel perspective and its application to model predictive control
+	</dt>
+  <dd id="bib-notes">
+		<span id="bib-authors">De Marchi, Gerdts.</span>
+		<span id="bib-info"><em>Automatica</em>, vol. 100.</span><br>
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_19_free_time_lqr_abstract')">abstract</a>]
+			[<a href="bib/19_free_time_lqr.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.1016/j.automatica.2018.11.032">doi</a>]
+		</span>
+		<div class="bib-abstract" id="bib_19_free_time_lqr_abstract">
+			We consider linear-quadratic optimal control problems with free final time and
+			terminal state constraints and propose a solution procedure that is particularly useful
+			for online feedback control in a model-predictive control (MPC) framework. The procedure avoids the standard time transformation, which transforms the problem into
+			an equivalent but non-convex optimal control problem on a fixed time horizon. The
+			transformed problem typically suffers from many local minima, which might cause instabilities in online optimization tasks like LQR or model-predictive control. To avoid
+			this drawback of the time transformation we develop a method from the viewpoint
+			of bilevel optimal control, which is beneficial especially in online control tasks. The
+			novelty of the approach is the optimal final time tracking procedure, for which we
+			exploit a property of the Hamiltonian function. To this end we show that within the
+			continuous-time closed-loop controlled system the optimal final time linearly decreases
+			in time, as one could intuitively expect. Finally, numerical experiments support the
+			effectiveness of the proposed algorithm.
+		</div>
+  </dd>
 </dl>
 
 <h3>2018</h3>
 
 <dl>
-	<dt>
-    		An Iterative Solution Approach for a Bi-level Optimization Problem for Congestion Avoidance on Road Networks
-    	</dt>
-    	<dd>
-    		A. Britzelmeier, A. De Marchi, M. Gerdts. In <em>Numerical Methods for Optimal Control Problems</em>.
-	</dd>
-    	<dd>
-    		[<a href="https://doi.org/10.1007/978-3-030-01959-4_2">doi</a>] [<a href="bib/18_numoc.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/18_numoc.bib" target="_blank" rel="noopener noreferrer">bibtex</a>]
+	<dt id="bib-title">
+		An Iterative Solution Approach for a Bi-level Optimization Problem for Congestion Avoidance on Road Networks
+	</dt>
+	<dd id="bib-notes">
+		<span id="bib-authors">Britzelmeier, De Marchi, Gerdts.</span>
+		<span id="bib-info">In <em>Numerical Methods for Optimal Control Problems</em>, <span id="bib-authors">Falcone, Ferretti, Gr&#252;ne, McEneaney</span> (eds), Springer INdAM Series, vol. 29.</span><br>
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_18_numoc_abstract')">abstract</a>]
+			[<a href="bib/18_numoc.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.1007/978-3-030-01959-4_2">doi</a>]
+		</span>
+		<div class="bib-abstract" id="bib_18_numoc_abstract">
+			The paper introduces an iterative solution algorithm for a bi-level optimization
+			problem arising in traffic control. The bi-level problem consists of a shortest path
+			problem on the upper level, which aims at minimizing the total path cost of a set of
+			cars in a road network. The cost coefficients in the shortest path problem represent
+			the expected driving time on each edge, accounting for congestions, and depend on
+			the solutions of a set of lower level optimal control problems, each one describing
+			the behavior of a single minimum-time driven car. On the other hand, each lower
+			level problem is built upon the path planned by the upper level. This leads to a
+			strong coupling between upper level problem and lower level problem. This coupling
+			is decomposed by an iterative procedure fixing either the costs or the paths in the
+			upper level and the lower level, respectively. Numerical experiments illustrate the
+			procedure and indicate that the iterative algorithm leads to suitable distribution of
+			cars in the network.
+		</div>
 	</dd>
 </dl>
 
 <dl>
-    	<dt>
-    		Traffic Flow on Single-Lane Road Networks: Multiscale Modelling and Simulation
-    	</dt>
-    	<dd>
-    		A. De Marchi, M. Gerdts. <em>IFAC-PapersOnLine</em>.
+	<dt id="bib-title">
+		Traffic Flow on Single-Lane Road Networks: Multiscale Modelling and Simulation
+	</dt>
+	<dd id="bib-notes">
+		<span id="bib-authors">De Marchi, Gerdts.</span>
+		<span id="bib-info">In <em>9th Vienna International Conference on Mathematical Modelling</em>, <span id="bib-authors">Breitenecker, Kemmetm&#252;ller, K&#246;rner, Kugi, Troch</span> (eds), MATHMOD 2018, Vienna.</span><br>
+		<!-- IFAC-PapersOnLine, vol. 51. -->
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_18_mathmod_abstract')">abstract</a>]
+			[<a href="bib/18_mathmod.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.1016/j.ifacol.2018.03.028">doi</a>]
+		</span>
+		<div class="bib-abstract" id="bib_18_mathmod_abstract">
+			This paper addresses the problem of modelling and simulation of the vehicular
+			traffic flow in a road network by adopting a measure-theoretic framework. This allows
+			to describe the system from both, a microscopic and a macroscopic point-of-view
+			simultaneously, in the sense that two scales co-exist and are coupled, namely a set of
+			moving agents and an average density. The resulting mathematical model consists of a
+			strongly coupled PDE-ODE system with non-local interactions. Within this work we
+			specify this multiscale model for a single-lane roundabout, that is, an example of a road
+			network. Then, we focus on the computational aspects in order to develop a setup for
+			numerical simulations and to analyse the results of some experiments. This multiscale
+			simulator can reproduce phenomena that characterize the real physical system, e.g.
+			self-organization effects, and thus it can be adopted as an environment for control
+			algorithms benchmarking or as a tool for simulation-based traffic flow control and
+			optimization.
+		</div>
 	</dd>
-	<dd>
-		Presented at MATHMOD 2018, Vienna.
-    	</dd>
-	<dd>
-		[<a href="https://doi.org/10.1016/j.ifacol.2018.03.028">doi</a>] [<a href="bib/18_mathmod.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/18_mathmod.bib" target="_blank" rel="noopener noreferrer">bibtex</a>]
-    	</dd>
 </dl>
 
 <h3>2016</h3>
 
 <dl>
-	<dt>
-    		Optimal Control of a Laser Source to Generate a Minimum Time Trajectory of a Droplet in a Liquid Layer
-    	</dt>
-    	<dd>
-    		F. Biral, E. Bertolazzi, P. Bosetti, A. De Marchi, M. M. Hanczyc.
-	</dd>
-	<dd>
-		Presented at FTC 2016, San Francisco.
-    	</dd>
-	<dd>
-		[<a href="https://doi.org/10.1109/FTC.2016.7821754">doi</a>] [<a href="bib/16_ftc.pdf" target="_blank" rel="noopener noreferrer">pdf</a>] [<a href="bib/16_ftc.bib" target="_blank" rel="noopener noreferrer">bibtex</a>]
-    	</dd>
+	<dt id="bib-title">
+		Optimal Control of a Laser Source to Generate a Minimum Time Trajectory of a Droplet in a Liquid Layer
+	</dt>
+  <dd id="bib-notes">
+		<span id="bib-authors">Biral, Bertolazzi, Bosetti, De Marchi, Hanczyc.</span>
+		<span id="bib-info">2016 Future Technologies Conference (FTC), San Francisco.</span><br>
+		<span onclick="event.stopPropagation();">
+			[<a href="javascript:showHideFun('bib_16_ftc_abstract')">abstract</a>]
+			[<a href="bib/16_ftc.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
+			[<a id="bib-link" href="https://doi.org/10.1109/FTC.2016.7821754">doi</a>]
+		</span>
+		<div class="bib-abstract" id="bib_16_ftc_abstract">
+			This paper describes the use of optimal control theory applied to the motion of
+			a low-power laser beam to precisely move a droplet in a liquid layer by means of
+			the force on the liquid-liquid interface arising due to the surrounding thermal field
+			(thermocapillary force and Marangoni effect). The form of heat field equations is
+			approximated by the solution of a finite sum of laser pulses, whose analytical solution
+			can be explicitly derived. In this way, the model of the system does not contain any
+			partial differential equation (PDE). Optimization is performed by using the direct
+			approach method and the <code>fmincon</code> solver provided by MATLAB. The initial guess
+			is found with a simple model predictive controller. Perspective applications of this
+			technology include beam-controlled targeting of pharmaceuticals in organic tissues.
+		</div>
+  </dd>
 </dl>
 
-<div id="footer">
-</div>
-
-<div align=right>
-	<p><small>Last updated: 2020-11-09</small></p>
+<div id="footer" align=right>
+	<a>Last updated: 2020-11-09</a>
 </div>
 
 </div>
