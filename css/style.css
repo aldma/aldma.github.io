@@ -17,10 +17,6 @@ body {
   padding-right: 1rem;
 }
 
-.highlight {
-    font-weight: 600;
-}
-
 #layout-content {
 	padding-top: 0.0em;
 	padding-left: 1.0em;
@@ -55,10 +51,6 @@ div#toptitle + h2, div#toptitle + h3 {
 
 em {
 	font-style: italic;
-}
-
-strong {
-	font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -193,7 +185,6 @@ dd#bib-notes {
 dt#bib-title {
 	font-size: 100%;
 	margin-top: 0.5ex;
-	margin-bottom: 0.5ex;
 }
 
 div.bib-abstract {
