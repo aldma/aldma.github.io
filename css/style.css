@@ -95,7 +95,7 @@ p {
 }
 
 div#footer {
-	border-top: 1px solid #c0c0c0; /* silver */
+	border-top: 1pt solid #c0c0c0; /* silver */
 	padding-top: 0.1em;
 	margin-top: 4.0em;
 }
