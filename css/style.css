@@ -10,23 +10,16 @@ body {
 	margin: 0;
 }
 
-.sidebyside {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 #layout-content {
 	padding-top: 0.0em;
 	padding-left: 1.0em;
 	padding-right: 1.0em;
-    	border: none;
-    	background: white;
-    	text-align: left;
-    	vertical-align: top;
-    	max-width: 670px;
-    	margin: 0 auto;
+	border: none;
+	background: white;
+	text-align: left;
+	vertical-align: top;
+	max-width: 670px;
+	margin: 0 auto;
 }
 
 a {
@@ -87,7 +80,7 @@ h3 {
 	border-bottom: none;
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
 	color: #444444; /* charcoal */
 }
 
