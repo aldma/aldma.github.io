@@ -173,3 +173,9 @@ div.bib-abstract {
     margin-left: 2pt;
     border-left: 1pt solid #939393; /* suva grey */
 }
+
+div.bib-bibtex {
+		font-family: monospace;
+    font-size: small;
+    font-weight: lighter;
+}
