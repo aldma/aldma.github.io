@@ -32,61 +32,54 @@
 
 A list of prototype software packages developed for performing numerical experiments on various research projects.
 
+For more details, other projects and personal code please visit my <a href="https://www.github.com/aldma">GitHub</a> account.
+
 <ul>
 	<li>
-		Convex quadratic programming:
-		<ul>
-			<li>
-				<b>QPDO</b>: the Quadratic Primal-Dual Optimizer <br>
+		<b>QPDO</b> <br>
+				The Quadratic Primal-Dual Optimizer (<b>QPDO</b>) solver is a numerical optimization package for convex quadratic programming.
 				<div>
 					<span class="bib-links" onclick="event.stopPropagation();">
-					[ <a href="https://github.com/aldma/qpdo" target="_blank" rel="noopener noreferrer">code</a>
+					[ <a href="https://github.com/aldma/qpdo" target="_blank" rel="noopener noreferrer">code</a> |
+					  <a href="publications.html#bib_20_qpdo">paper</a>
 					]
 					</span>
 				</div>
-				A research C-code for solving convex quadratic programs subject to linear constraints. The method relies on a primal-dual proximal regularization of the original problem and	a tailored damped semismooth Newton's method. <br>
-				For more details, refer to <a href="publications.html#bib_20_qpdo"><em>On a Primal-Dual Newton Proximal ...</em></a>
-			</li>
-		</ul>
+				Written in C, with MATLAB interface. <br>
+				The method relies on a primal-dual proximal regularization of the original problem and	a tailored damped semismooth Newton's method.
 	</li>
   <br>
 	<li>
-		Equality-constrained nonlinear programming:
-		<ul>
-			<li>
-				<b>HALeqO</b>: Homotopy Augmented Lagrangian method for EQuality-constrained Optimization <br>
+		<b>HALeqO.jl</b><br>
+				A numerical optimization package implementing a Homotopy Augmented Lagrangian method for EQuality-constrained nonlinear Optimization.
 				<div>
 					<span class="bib-links" onclick="event.stopPropagation();">
-					[ <a href="https://github.com/aldma/HALeqO.jl" target="_blank" rel="noopener noreferrer">code</a>
+					[ <a href="https://github.com/aldma/HALeqO.jl" target="_blank" rel="noopener noreferrer">code</a> |
+					  <a href="publications.html#bib_21_haleqo">paper</a>
 					]
 					</span>
 				</div>
-				A research Julia-code for solving continuous nonlinear equality-constrained optimization problems, based on a homotopy augmented Lagrangian method and globalised Newton's steps with Armijo's line-search. <br>
-				For more details, refer to <a href="publications.html#bib_21_haleqo"><em>Augmented Lagrangian methods as ...</em></a>
-			</li>
-		</ul>
+				Written in Julia.
+				The method relies on primal-dual proximal regularization and globalised Newton's steps with Armijo's line-search.
 	</li>
 	<br>
 	<li>
-		Constrained structured programming:
-		<ul>
-			<li>
-				<b>Bazinga</b>: a toolbox for constrained structured optimization <br>
+		<b>Bazinga.jl</b><br>
+			A toolbox for constrained structured programming: nonsmooth, nonconvex, constrained optimization problems.
 				<div>
 					<span class="bib-links" onclick="event.stopPropagation();">
-					[ <a href="https://github.com/aldma/Bazinga.jl" target="_blank" rel="noopener noreferrer">code</a>
+					[ <a href="https://github.com/aldma/Bazinga.jl" target="_blank" rel="noopener noreferrer">code</a> |
+					  <a href="publications.html#bib_21_dissertation">phdthesis</a>
 					]
 					</span>
 				</div>
-				A research Julia-code for solving nonsmooth, nonconvex, constrained, structured optimization problems. This problem class is investigated in my doctoral dissertation, as well as the algorithmic framework based on augmented Lagrangian and proximal methods. <br>
-				For more details, refer to <a href="publications.html#bib_21_dissertation"><em>Augmented Lagrangian and Proximal Methods ...</em></a>
-			</li>
-		</ul>
+				Written in Julia.
+				This problem class is investigated in my doctoral dissertation, as well as the algorithmic framework based on augmented Lagrangian and proximal methods.
 	</li>
 </ul>
 
 <div id="footer" align=right>
-	<a>Last updated: 2021-06-20</a>
+	<a>Last updated: 2022-01-08</a>
 </div>
 
 </div>
