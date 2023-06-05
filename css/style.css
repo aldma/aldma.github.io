@@ -51,7 +51,7 @@ em {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto Slab', serif;
+	/*font-family: 'Roboto Slab', serif;*/
 	color: #ffc167; /* very light orange */
 	font-weight: normal;
 }
@@ -142,21 +142,21 @@ div#toptitle h1, #layout-content div#toptitle h1 {
 }
 
 .bib-info {
-	font-size: 0.8em;
+	font-size: 90%;
 	color: #939393; /* suva grey */
 }
 
 .bib-title {
-	font-size: 1em;
+	font-size: 110%;
 	font-style: normal;
 	margin-top: 0.5ex;
 }
 
 .author {
+	font-size: 110%;
 	font-style: normal;
 	font-variant: small-caps;
 	text-transform: lowercase;
-	font-size: 1.2em;
 }
 
 .bib-links {
@@ -164,7 +164,7 @@ div#toptitle h1, #layout-content div#toptitle h1 {
 }
 
 div.bib-abstract {
-    font-size: 0.8em;
+    font-size: 90%;
     font-weight: normal;
     display: none;
     margin-top: 1ex;
@@ -175,7 +175,7 @@ div.bib-abstract {
 }
 
 div.bib-bibtex {
+    font-size: 90%;
 	font-family: monospace;
-    font-size: 0.8em;
     font-weight: normal;
 }
