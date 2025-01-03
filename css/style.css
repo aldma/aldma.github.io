@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-	background-color: #111111;
-	color: #cccccc;
+	color: #111111;
+	background-color: #fffafa;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.1em;
 	padding-bottom: 8px;
@@ -15,7 +15,7 @@ body {
 	padding-left: 1.0em;
 	padding-right: 1.0em;
 	border: none;
-	background: #111111;
+	background: #fffafa;
 	text-align: left;
 	vertical-align: top;
 	max-width: 747px;
@@ -25,14 +25,17 @@ body {
 /* #ffc167; very light orange */
 /* #bce2f2; very soft blue */
 /* #939393; suva grey */
+/* #fffafa; snow */
+/* #f4a460; sandybrown */
+/* #4169e1; royalblue */
 
 a {
-	color: #bce2f2; /* very soft blue */
+	color: #4169e1;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #ffc167; /* very light orange */
+	color: #f4a460;
 	cursor: pointer;
 }
 
@@ -52,7 +55,7 @@ em {
 
 h1, h2, h3, h4, h5, h6 {
 	/*font-family: 'Roboto Slab', serif;*/
-	color: #ffc167; /* very light orange */
+	color: #f4a460;
 	font-weight: normal;
 }
 
@@ -62,7 +65,7 @@ h1, h2, h3 {
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #939393; /* suva grey */
+	border-bottom: 1px solid #939393;
 }
 
 h1 {
@@ -86,7 +89,7 @@ h3 {
 }
 
 h4, h5, h6 {
-	color: #939393; /* suva grey */
+	color: #939393;
 }
 
 p {
@@ -97,14 +100,14 @@ p {
 }
 
 div#footer {
-	border-top: 1pt solid #939393; /* suva grey */
+	border-top: 1pt solid #939393;
 	padding-top: 0.1em;
 	margin-top: 4.0em;
 }
 
 div#footer a {
 	font-size: 80%;
-	color: #939393; /* suva grey */
+	color: #939393;
 }
 
 dl {
@@ -144,7 +147,7 @@ div#toptitle h1, #layout-content div#toptitle h1 {
 
 .bib-info {
 	font-size: 90%;
-	color: #939393; /* suva grey */
+	color: #939393;
 }
 
 .bib-title {
@@ -172,7 +175,7 @@ div.bib-abstract {
     margin-bottom: 1ex;
     padding: 0 8pt;
     margin-left: 2pt;
-    border-left: 1pt solid #939393; /* suva grey */
+    border-left: 1pt solid #939393;
 }
 
 div.bib-bibtex {
