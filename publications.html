@@ -47,6 +47,61 @@
 		<h3>Preprints</h3> <!--&#8766;  Working Papers-->
 		<dl>
 			<dt>
+				<a class="bib-title" id="bib_bui2026cutting" href="https://arxiv.org/abs/2511.00520"
+					target="_blank" rel="noopener noreferrer">
+					Cutting plane methods with gradient-based heuristics
+				</a>
+			</dt>
+			<dd>
+				<div>
+					<em class="author">Bùi</em>,
+					<em class="author">De Marchi</em> (2025)
+				</div>
+				<div>
+					<span class="bib-links" onclick="event.stopPropagation();">
+						[ <a href="javascript:showHideFun('bib_abstract_bui2026cutting')">abstract</a> |
+						<a href="https://arxiv.org/abs/2511.00520" target="_blank" rel="noopener noreferrer">pdf</a> |
+						<a href="javascript:showHideFun('bib_bibtex_bui2026cutting')">bibtex</a>
+						]
+					</span>
+				</div>
+				<div class="bib-abstract" id="bib_abstract_bui2026cutting" hidden>
+					Cutting plane methods, particularly outer approximation, are a well-established approach for solving 
+					nonlinear discrete optimization problems without relaxing the integrality of decision variables. While 
+					powerful in theory, their computational performance can be highly variable. Recent research has shown 
+					that constructing cutting planes at the projection of infeasible points onto the feasible set can 
+					significantly improve the performance of cutting plane approaches. Motivated by this, we examine whether 
+					constructing cuts at feasible points closer to the optimal solution set could further enhance the 
+					effectiveness of cutting plane methods. We propose a hybrid method that combines the global convergence 
+					guarantees of cutting plane methods with the local exploration capabilities of first-order optimization 
+					techniques. Specifically, we use projected gradient methods as a heuristic to identify promising regions 
+					of the solution space and generate tighter, more informative cuts. We focus on binary optimization problems 
+					with convex differentiable objective functions, where projection operations can be efficiently computed 
+					via mixed-integer linear programming. By constructing cuts at points closer to the optimal solution set 
+					and eliminating non-optimal regions, the algorithm achieves better approximation of the feasible region 
+					and faster convergence. Numerical experiments confirm that our approach improves both the quality of the 
+					solution and computational efficiency across different solver configurations. This framework provides a 
+					flexible foundation for further extensions to more general discrete domains and offers a promising heuristic 
+					to the toolkit for nonlinear discrete optimization.
+				</div>
+				<div class="bib-bibtex" id="bib_bibtex_bui2026cutting" hidden>
+					<pre>@misc{bui2025cutting,
+    author      = {B\`ui, H\`oa T. and De~Marchi, Alberto},
+    title       = {Cutting plane methods with gradient-based heuristics},
+    year        = {2025},
+    eprinttype  = {arxiv},
+    eprint      = {2511.00520},
+}</pre>
+				</div>
+				<div class="bib-info">
+					submitted
+				</div>
+			</dd>
+		</dl>
+
+		
+		<dl>
+			<dt>
 				<a class="bib-title" id="bib_demarchi2026condensing" href="https://arxiv.org/abs/2510.17465"
 					target="_blank" rel="noopener noreferrer">
 					A condensing approach for linear-quadratic optimization with geometric constraints
@@ -1939,7 +1994,7 @@ being retrained on each dataset.
 		</dl>
 
 		<div id="footer" align=right>
-			<a>Latest build: 2025-10-21</a>
+			<a>Latest build: 2025-11-04</a>
 		</div>
 
 	</div>
