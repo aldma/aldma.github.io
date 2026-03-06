@@ -179,16 +179,16 @@
 					significant improvements in computational performance.
 				</div>
 				<div class="bib-bibtex" id="bib_bibtex_demarchi2026condensing" hidden>
-					<pre>@misc{demarchi2025condensing,
+					<pre>@misc{demarchi2026condensing,
     author      = {De~Marchi, Alberto},
     title       = {A condensing approach for linear-quadratic optimization with geometric constraints},
-    year        = {2025},
+    year        = {2026},
     eprinttype  = {arxiv},
     eprint      = {2510.17465},
 }</pre>
 				</div>
 				<div class="bib-info">
-					submitted to ECC 26
+					accepted for ECC 26
 				</div>
 			</dd>
 		</dl>
@@ -247,14 +247,15 @@
 		
 		<dl>
 			<dt>
-				<a class="bib-title" id="bib_menager2025contact" href="https://hal.science/hal-05201780"
+				<a class="bib-title" id="bib_menager2026frictional" href="https://hal.science/hal-05201780"
 					target="_blank" rel="noopener noreferrer">
-					Contact-implicit inverse dynamics
+					Frictional contact-implicit inverse dynamics
 				</a>
 			</dt>
 			<dd>
 				<div>
 					<em class="author">Ménager</em>,
+					<em class="author">Fabre</em>,
 					<em class="author">Bambade</em>,
 					<em class="author">Jallet</em>,
 					<em class="author">De Marchi</em>,
@@ -262,30 +263,32 @@
 				</div>
 				<div>
 					<span class="bib-links" onclick="event.stopPropagation();">
-						[ <a href="javascript:showHideFun('bib_abstract_menager2025contact')">abstract</a> |
+						[ <a href="javascript:showHideFun('bib_abstract_menager2026frictional')">abstract</a> |
+						<a href="bib/menager2026frictional.pdf" target="_blank" rel="noopener noreferrer">pdf</a> |
 						<a href="https://hal.science/hal-05201780" target="_blank" rel="noopener noreferrer">HAL</a> |
-						<a href="javascript:showHideFun('bib_bibtex_menager2025contact')">bibtex</a> |
+						<a href="javascript:showHideFun('bib_bibtex_menager2026frictional')">bibtex</a> |
 						<a href="https://www.youtube.com/watch?v=TI0LChGz6dM" target="_blank" rel="noopener noreferrer">video</a>
 						]
 					</span>
 				</div>
-				<div class="bib-abstract" id="bib_abstract_menager2025contact" hidden>
-					We extend the control formalism of task-space inverse dynamics, classically formulated as a quadratic program, to a 
-					quadratic program with complementarity constraints (QPCC) that fully accounts for actuator limits and frictional 
-					contacts modeled as nonlinear complementary constraints. Inspired by the alternating direction method of multipliers, 
-					we propose an iterative optimization approach that alternates between minimizing a smooth convex function accounting 
-					for task objectives and system dynamics, and projecting onto convex and non-convex sets that capture actuator and 
-					contact constraints. By handling complementary frictional contact constraints through projection, our approach implicitly 
-					and automatically infers the optimal contact modes that fulfill the task objectives and constraints. We have implemented 
-					our QPCC solver in C++ for efficiency, and demonstrate its usability and versatility on rigid and soft robots across 
-					various control scenarios, ranging from the control of actuated box sliding on the grounds, to control balance of legged 
-					robots that automatically break and create contacts with the ground or control of deformable robots interacting with 
-					their environment.
+				<div class="bib-abstract" id="bib_abstract_menager2026frictional" hidden>
+					Task-space inverse dynamics is a versatile paradigm for real-time robot control, capable of handling under-actuation 
+					and contact interactions across diverse platforms from humanoids to deformable robots. However, in practice, contact-aware 
+					controllers typically assume predefined contact sequences, inherently limiting their ability to automatically select among 
+					breaking, sliding, or sticking contacts. In this work, we extend the classical quadratic programming formulation of inverse 
+					dynamics to a quadratic program with complementarity constraints (QPCC). This formulation natively accounts for actuator 
+					limits and frictional contacts, modeled as nonlinear complementarity constraints. To solve these QPCC problems, we propose 
+					an iterative optimization approach based on alternating minimization and augmented Lagrangian methods. Our solver 
+					alternates between minimizing a smooth, convex function that captures task objectives and system dynamics, and projecting 
+					onto sets that enforce actuator and nonconvex frictional contact constraints. By handling complementarity constraints 
+					through projection, our approach implicitly and automatically reasons about optimal contact modes. We demonstrate the 
+					efficiency and versatility of our approach across various scenarios, ranging from dynamic jumping and contact-rich motions 
+					with rigid robots to complex environmental interactions with soft robots.
 				</div>
-				<div class="bib-bibtex" id="bib_bibtex_menager2025contact" hidden>
-					<pre>@misc{menager2025contact,
-    author      = {M{\'e}nager, Etienne and Bambade, Antoine and Jallet, Wilson and De~Marchi, Alberto and Carpentier, Justin},
-    title       = {Contact-Implicit Inverse Dynamics},
+				<div class="bib-bibtex" id="bib_bibtex_menager2026frictional" hidden>
+					<pre>@misc{menager2026frictional,
+    author      = {M{\'e}nager, Etienne and Fabre, Pierre and Bambade, Antoine and Jallet, Wilson and De~Marchi, Alberto and Carpentier, Justin},
+    title       = {Frictional Contact-Implicit Inverse Dynamics},
     year        = {2025},
     url         = {https://hal.science/hal-05201780},
     eprinttype  = {hal},
@@ -2112,7 +2115,7 @@ being retrained on each dataset.
 		</dl>
 
 		<div id="footer" align=right>
-			<a>Latest build: 2026-03-05</a>
+			<a>Latest build: 2026-03-06</a>
 		</div>
 
 	</div>
