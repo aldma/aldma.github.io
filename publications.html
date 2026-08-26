@@ -47,6 +47,48 @@
 		<h3>Preprints</h3> <!--&#8766;  Working Papers-->
 		<dl>
 			<dt>
+				<a class="bib-title" id="bib_demarchi2026mirror" href="https://arxiv.org/abs/2608.22834"
+					target="_blank" rel="noopener noreferrer">
+					Mirror descent algorithms with logarithmic barriers
+				</a>
+			</dt>
+			<dd>
+				<div>
+					<em class="author">De Marchi</em>,
+					<em class="author">Malitsky</em>,
+					<em class="author">Taylor</em> (2026)
+				</div>
+				<div>
+					<span class="bib-links" onclick="event.stopPropagation();">
+						[ <a href="javascript:showHideFun('bib_abstract_demarchi2026mirror')">abstract</a> |
+						<a href="https://arxiv.org/abs/2608.22834" target="_blank" rel="noopener noreferrer">arXiv</a> |
+						<a href="javascript:showHideFun('bib_bibtex_demarchi2026mirror')">bibtex</a>
+						]
+					</span>
+				</div>
+				<div class="bib-abstract" id="bib_abstract_demarchi2026mirror" hidden>
+					This work derives convergence guarantees for mirror descent and proximal mirror descent algorithms when a 
+					logarithmic barrier is used as a distance-generating function. Standard approaches cannot be applied when 
+					the solution lies on the boundary, where the Bregman divergence blows up. We show that, in a specific setting, 
+					both methods enjoy an O(logk/k) rate, which is also tight. In addition, our contributions include: (i) a new 
+					technique for handling the blow-up; (ii) a resolution of a gap in the theory of relative smoothness; and (iii) 
+					a comparison of the proposed approach with interior-point methods.
+				</div>
+				<div class="bib-bibtex" id="bib_bibtex_demarchi2026mirror" hidden>
+					<pre>@misc{demarchi2026mirror,
+    author      = {De~Marchi, Alberto and Malitsky, Yura and Taylor, Adrien B.},
+    title       = {Mirror descent algorithms with logarithmic barriers},
+    year        = {2026},
+    eprinttype  = {arxiv},
+    eprint      = {2608.22834},
+}</pre>
+				</div>
+			</dd>
+		</dl>
+		
+		
+		<dl>
+			<dt>
 				<a class="bib-title" id="bib_birgin2026elastically" href="https://arxiv.org/abs/2607.02697"
 					target="_blank" rel="noopener noreferrer">
 					Elastically safeguarded augmented Lagrangian methods
@@ -325,7 +367,7 @@
 			<dt>
 				<a class="bib-title" id="bib_bertoncini2025reinforcement" href="https://arxiv.org/abs/2509.07404"
 					target="_blank" rel="noopener noreferrer">
-					Reinforcement learning for online hyperparameter tuning in convex quadratic programming
+					Reinforcement learning for adaptive interior point methods in convex quadratic programming
 				</a>
 			</dt>
 			<dd>
@@ -346,20 +388,19 @@
 				<div class="bib-abstract" id="bib_abstract_bertoncini2025reinforcement" hidden>
 					Quadratic programming is a workhorse of modern nonlinear optimization, control, and data science. Although
 					regularized methods offer convergence guarantees under minimal assumptions on the problem data, they can
-					exhibit the slow tail-convergence typical of first-order schemes, thus requiring many iterations to achieve 
-					high-accuracy solutions. Moreover, hyperparameter tuning significantly impacts on the solver performance but 
-					how to find an appropriate parameter configuration remains an elusive research question. To address these 
-					issues, we explore how data-driven approaches can accelerate the solution process. Aiming at high-accuracy 
-					solutions, we focus on a stabilized interior-point solver and carefully handle its two-loop flow and control 
-					parameters. We will show that reinforcement learning can make a significant contribution to facilitating the 
-					solver tuning and to speeding up the optimization process. Numerical experiments demonstrate that, after a 
-					lightweight training, the learned policy generalizes well to different problem classes with varying dimensions 
-					and to various solver configurations.
+					exhibit the slow tail-convergence typical of first-order schemes, thus requiring many iterations to achieve
+					high-accuracy solutions. Moreover, hyperparameter tuning significantly impacts the solver performance but
+					how to find an appropriate parameter configuration remains an elusive research question. To address these
+					issues, we explore how data-driven approaches can accelerate the solution process. Aiming at high-accuracy
+					solutions, we focus on a regularized interior-point solver and carefully handle its two-loop flow and control
+					parameters. We will show that reinforcement learning can make a significant contribution to facilitating the
+					solver tuning and to speeding up the optimization process. Numerical experiments demonstrate that, after a
+					lightweight training, the learned policy generalizes well to different problem classes with varying dimensions.
 				</div>
 				<div class="bib-bibtex" id="bib_bibtex_bertoncini2025reinforcement" hidden>
 					<pre>@misc{bertoncini2025reinforcement,
     author      = {Bertoncini, Jeremy and De~Marchi, Alberto and Gerdts, Matthias and Gottschalk, Simon},
-    title       = {Reinforcement learning for online hyperparameter tuning in convex quadratic programming},
+    title       = {Reinforcement learning for adaptive interior point methods in convex quadratic programming},
     year        = {2025},
     eprinttype  = {arxiv},
     eprint      = {2509.07404},
@@ -2278,7 +2319,7 @@ being retrained on each dataset.
 		</dl>
 
 		<div id="footer" align=right>
-			<a>Latest build: 2026-08-05</a>
+			<a>Latest build: 2026-08-26</a>
 		</div>
 
 	</div>
