@@ -45,6 +45,56 @@
 		format.
 
 		<h3>Preprints</h3> <!--&#8766;  Working Papers-->
+		
+		<dl>
+			<dt>
+				<a class="bib-title" id="bib_demarchi2026envelopt" href="https://doi.org/10.13140/RG.2.2.19530.12483"
+					target="_blank" rel="noopener noreferrer">
+					Envelopt: Constrained convex composite optimization
+				</a>
+			</dt>
+			<dd>
+				<div>
+					<em class="author">De Marchi</em>,
+					<em class="author">Orban</em> (2026)
+				</div>
+				<div>
+					<span class="bib-links" onclick="event.stopPropagation();">
+						[ <a href="javascript:showHideFun('bib_abstract_demarchi2026envelopt')">abstract</a> |
+						<a href="https://doi.org/10.13140/RG.2.2.19530.12483" target="_blank" rel="noopener noreferrer">ResearchGate</a> |
+						<a href="javascript:showHideFun('bib_bibtex_demarchi2026envelopt')">bibtex</a> |
+						<a href="https://github.com/JuliaSmoothOptimizers/Envelopt.jl" target="_blank" rel="noopener noreferrer">code</a>
+						]
+					</span>
+				</div>
+				<div class="bib-abstract" id="bib_abstract_demarchi2026envelopt" hidden>
+					We introduce Envelopt, a globally convergent iterative framework for a broad class of structured optimization problems 
+					where a smooth objective is augmented by a nonsmooth convex regularizer composed with a smooth mapping, and the variables 
+					are subject to general smooth constraints. All smooth functions may be nonconvex. The method is akin to an augmented-Lagrangian
+					method in which partial minimization with respect to a lifting variable results in smooth subproblems involving the Moreau 
+					envelope of the nonsmooth regularizer, and the original constraints are retained explicitly. Only the proximal operator of 
+					the regularizer is required. Subproblems may be solved with off-the-shelf smooth optimization solvers. We state global 
+					convergence properties, establish that feasible limit points are asymptotically stationary, and develop an infeasibility
+					detection mechanism. We derive worst-case iteration complexity bounds when the penalty parameter is and is not bounded away 
+					from zero. The framework subsumes the classical augmented Lagrangian method and accommodates important extensions, including
+					stabilized formulations for degenerate problems, exact penalty methods, and conic constraints. We provide a Julia implementation,
+					Envelopt.jl, as part of the JuliaSmoothOptimizers ecosystem. Numerical experiments with low-rank matrix completion, semidefinite
+					programming, complementarity-constrained optimization, and nonconvex regularizers demonstrate the effectiveness and versatility of Envelopt.
+				</div>
+				<div class="bib-bibtex" id="bib_bibtex_demarchi2026envelopt" hidden>
+					<pre>@techreport{demarchi2026envelopt,
+    author      = {De~Marchi, Alberto and Orban, Dominique},
+    title       = {Envelopt: Constrained convex composite optimization},
+    year        = {2026},
+    institution = {GERAD},
+    number      = {G-2026-42},
+    doi         = {10.13140/RG.2.2.19530.12483},
+}</pre>
+				</div>
+			</dd>
+		</dl>
+		
+		
 		<dl>
 			<dt>
 				<a class="bib-title" id="bib_demarchi2026mirror" href="https://arxiv.org/abs/2608.22834"
@@ -2321,7 +2371,7 @@ being retrained on each dataset.
 		</dl>
 
 		<div id="footer" align=right>
-			<a>Latest build: 2026-08-26</a>
+			<a>Latest build: 2026-09-11</a>
 		</div>
 
 	</div>
