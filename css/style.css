@@ -5,9 +5,11 @@ body {
 	color: #111111;
 	background-color: #fffafa;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.0em;
+	font-size: 14px;
+	max-width: 40rem;
 	padding-bottom: 8px;
-	margin: 0;
+	padding: 2rem 1rem;
+	margin: 0 auto;
 }
 
 #layout-content {
